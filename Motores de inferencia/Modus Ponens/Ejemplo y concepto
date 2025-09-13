@@ -1,0 +1,47 @@
+En base al documento: https://yaneci.wordpress.com/wp-content/uploads/2011/04/inferencia.pdf
+
+![alt text](image.png)
+
+# Ejemplo práctico de Modus Ponens
+
+## Contexto: Diagnóstico médico
+
+Supongamos que trabajas en un hospital y quieres determinar si un paciente tiene una infección viral específica.
+
+### Planteamiento del escenario
+1. Sabemos que **si un paciente tiene infección viral, entonces presenta fiebre alta**.  
+   - Lógicamente:  
+     `Si infección viral (P) → fiebre alta (Q)`
+
+2. Observamos que el paciente **tiene fiebre alta**.  
+   - Es decir:  
+     `Q`
+
+### Aplicando Modus Ponens
+- Regla:  
+  `(P → Q) ∧ Q ⇒ P`
+
+- Sustituyendo nuestro escenario:  
+
+
+Si el paciente tiene infección viral, entonces presenta fiebre alta.
+El paciente presenta fiebre alta.
+⇒ El paciente tiene infección viral.
+
+
+### Explicación paso a paso
+1. Tenemos una proposición condicional: “Infección viral → fiebre alta”.
+2. Observamos que la consecuencia (fiebre alta) es verdadera.
+3. Según modus ponens, si la consecuencia es verdadera y la regla condicional es válida, entonces la proposición inicial también es verdadera.
+4. Conclusión: **el paciente tiene infección viral**.
+
+### Extensión del ejemplo
+Ahora supongamos que el hospital tiene protocolos adicionales:
+
+- Regla 1: Si un paciente tiene infección viral, debe aislarse para evitar contagio.
+- Regla 2: Si un paciente tiene fiebre alta y tos, se realiza una prueba de laboratorio.
+- Regla 3: Si se confirma infección viral, se inicia tratamiento antiviral.
+
+Aplicando **modus ponens** en cada paso, el personal puede **tomar decisiones rápidas y precisas** basadas en hechos observables y reglas predefinidas.
+
+> Esto muestra que el **modus ponens** es muy útil en situaciones prácticas como medicina, seguridad, control de procesos y diagnóstico de fallas.

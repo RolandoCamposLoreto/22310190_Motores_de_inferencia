@@ -1,0 +1,47 @@
+En base al documento: https://yaneci.wordpress.com/wp-content/uploads/2011/04/inferencia.pdf
+
+![alt text](image.png)
+
+# Ejemplo práctico 
+
+### Contexto práctico: Seguridad informática
+
+Supongamos que trabajas en el área de seguridad de una empresa y quieres verificar si un sistema ha sido comprometido por malware.
+
+### Planteamiento del escenario
+1. Sabemos que **si un sistema está comprometido, entonces detectaremos tráfico sospechoso en la red**.  
+   - Lógicamente:  
+     `Si sistema comprometido (P) → tráfico sospechoso (Q)`
+
+2. Revisamos los logs de la red y **no encontramos tráfico sospechoso**.  
+   - Es decir:  
+     `¬Q`
+
+### Aplicando Modus Tollens
+- Regla:  
+  `(P → Q) ∧ ¬Q ⇒ ¬P`
+
+- Sustituyendo nuestro escenario:  
+
+
+Si el sistema está comprometido, habrá tráfico sospechoso.
+No hay tráfico sospechoso.
+⇒ El sistema NO está comprometido.
+
+
+### Explicación paso a paso
+1. Tenemos una proposición condicional: “Sistema comprometido → tráfico sospechoso”.
+2. Observamos que la consecuencia (tráfico sospechoso) es falsa.
+3. Según modus tollens, si la consecuencia es falsa, la proposición inicial también debe ser falsa.
+4. Conclusión: **el sistema no está comprometido**.
+
+### Extensión del ejemplo
+Si la empresa tiene múltiples capas de seguridad:
+
+- Regla 1: Si un sistema está comprometido, habrá tráfico sospechoso.
+- Regla 2: Si el antivirus está desactualizado, aumentan las probabilidades de infección.
+- Regla 3: Si se detecta un intento de intrusión, se activa un protocolo de bloqueo automático.
+
+Cada vez que **no se cumple la consecuencia esperada**, podemos **descartar hipótesis sobre compromisos o fallas**, ayudando a priorizar revisiones y acciones de seguridad.
+
+> Esto demuestra que el **modus tollens** sirve en situaciones prácticas y críticas como seguridad informática, diagnóstico médico, mantenimiento industrial, etc.
